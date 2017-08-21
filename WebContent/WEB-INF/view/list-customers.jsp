@@ -11,6 +11,11 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css"/>
+		  
+		  <link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/bootstrap/bootstrap.min.css"/>
+		  
 
 </head>
 
@@ -23,6 +28,7 @@
 		</div>
 	</div>
 	
+	
 	<div id="container">
 		
 		<div id="content">
@@ -31,12 +37,13 @@
 			
 			<input type="button" value="Add Customer"
 				   onclick="window.location.href='showFormForAdd';return false;"
-				   class="add-button"
+				   class="btn btn-primary"
 				   />
+			<br><br>
 			
 			
 			<!-- add  html table here -->
-			<table>
+			<table class="table table-striped">
 				<tr>
 					<th>First Name</th>
 					<th>Last  Name</th>
@@ -64,9 +71,9 @@
 						
 						<td> 
 							<!--display the update link  -->
-							<a href="${updateLink}">Update</a>
+							<a href="${updateLink}" class="btn btn-primary" >Update</a>
 							|
-							<a href="${deleteLink}"
+							<a href="${deleteLink}" class="btn btn-danger"
 							    onclick="if(!(confirm('Are you sure you want to delete this customer?')))return false">Delete</a>
 						
 						</td>	

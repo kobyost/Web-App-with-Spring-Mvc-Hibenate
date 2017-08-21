@@ -1,4 +1,4 @@
-package com.luv2code.testdb;
+package com.koby.testdb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.sql.*;
-
+     
 /**
  * Servlet implementation class TestDbServlet
  */

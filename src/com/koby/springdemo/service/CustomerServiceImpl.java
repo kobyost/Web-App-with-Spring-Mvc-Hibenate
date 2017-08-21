@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.service;
+package com.koby.springdemo.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.luv2code.springdemo.dao.CustomerDAO;
-import com.luv2code.springdemo.entity.Customer;
+import com.koby.springdemo.dao.CustomerDAO;
+import com.koby.springdemo.entity.Customer;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
